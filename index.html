@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memo</title>
+    <title>Memo</title> 
+     
 </head>
 <body>
-    <h3>Memo</h3>
-    <form>
+    <div style="text-align: center">
+    <img src="./img/hero.png" alt="" >
+    <h1 style="color: #f1f1f2;background-color: #1995ad;">Memo</h1>
+        <form style="padding: bottom 5px;">
         <!-- テキストボックスの id memoTxt を指定 -->
         <input type="text" id="memoTxt">
         <!-- 追加 -->
@@ -20,9 +23,10 @@
         <!-- ローカルストレージからリストを復元 -->
         <button type="button" id="loadBtn">load</button>
     </form>
+    </div>
     <!-- ul タグに id="memoList" を付与。id 属性は任意のタグに付与できる。後のJavaScriptコードからアクセスしたい要素に指定しておく -->
     <!-- ul タグはリスト（箇条書き）を出力するため -->
-    <ul id="memoList">
+    <ul id="memoList" style="width: 200px;margin: auto;" >
     </ul>
     <!-- scriptタグを使ってJavaScriptファイルを読み込み -->
     <script src="memo.js"></script>
